@@ -1,3 +1,4 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
 diff --git a/README.md b/README.md
 index dcaf71693e4a4e96739438640406f4f66c7a2dd4..58fefd12a9e44f59a893a19eaf0095754bcd1585 100644
 --- a/README.md
@@ -65,3 +66,6 @@ index dcaf71693e4a4e96739438640406f4f66c7a2dd4..58fefd12a9e44f59a893a19eaf009575
 +- Stockage sécurisé documents (S3/Supabase Storage)
 +- Export Excel complet via SheetJS
 +- Logs d’audit + rôles (admin/collaborateur)
+ 
+EOF
+)
